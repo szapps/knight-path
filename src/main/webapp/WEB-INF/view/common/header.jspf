@@ -1,0 +1,96 @@
+<%@page import="org.springframework.context.i18n.LocaleContextHolder"%>
+<%@page import="java.util.Locale"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
+<%@taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
+<%@ page contentType="text/html;charset=UTF-8" %>
+<%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
+<html>
+	<head>
+	 	<meta charset="utf-8">
+    		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Knight's Shortest Path</title>
+		<link href="/webjars/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+		<style type="text/css">
+			/* standards & resets */
+			ul {
+				list-style: none;
+			}
+			
+			/* standard styling */
+			body {
+				padding-top: 15px;
+			}
+			
+			/* overwritten bootstrap classes */
+		    .jumbotron {
+		    		background: #f0f0f0;
+		    }
+		    
+		    /* styles for small devices */
+		    @media (max-width: 767px) {
+		    	    .language--switch {
+		    	        text-align: right;
+		    	    }
+		    }
+		    
+		    * {
+			  margin: 0; 
+			  padding: 0; 
+			}
+			
+			table { 
+			  border-collapse: collapse; 
+			  border-spacing: 0; 
+			}
+			
+			#chessboard { 
+			  padding: 0px; 
+			  margin: 0 auto; 
+			  border: 1px solid #181818; 
+			}
+			
+			#chessboard tr td { 
+			  width: 50px; 
+			  height: 50px; 
+			  font-size: 35px;
+			  text-align: center;
+			}
+			
+			#chessboard tr:nth-child(2n) td:nth-child(2n+1) { 
+			  background: #9f9f9f; 
+			}
+			
+			#chessboard tr:nth-child(2n+1) td:nth-child(2n) { 
+			  background: #9f9f9f; 
+			} 
+		</style>
+		<script src="/webjars/jquery/1.9.1/jquery.min.js"></script>
+		<script src="/webjars/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+		
+		<script>
+			$(document).ready(function() {
+			
+					// create each row each containing 8 columns
+					var space = 1;
+					var yCoordinates = ["A","B","C","D","E","F","G","H"];
+					
+					for (var r=0; r<8; r++) {
+					  var colTD = "";
+						for (var c=0; c<8; c++) { 
+							var label=yCoordinates[r]+(c+1);
+							colTD = colTD + "<td data-pos='"+space+"' id='"+label+"'>";
+								colTD = colTD + "<span style='font-size:10px;font-weight: lighter;'>"+label+"</span><span id='knight"+label+"'></span>";	
+							colTD = colTD + "</td>"; 
+							space++; 
+						}
+						$("#chessboard").append("<tr>"+colTD+"</tr>");
+					}
+					
+			});
+		</script>
+	</head>
+	<body class="intariot-ums" style="min-height: 100%">
+	
+	<!-- &#9816; -->
