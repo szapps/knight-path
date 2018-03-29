@@ -1,4 +1,4 @@
-# CN Consulting GmbH, Wolfsburg. Coding excercise
+# Knight's Path Finder 
 
 @Author: Shrinivas Zilli
 
@@ -20,8 +20,8 @@ This project is configured as spring boot microservice and the output is a war f
 
 ## Running the application:
 
-1. Build the artifact mvn clean install, which produces the artifact target/cn-consulting-coding-excercise-2.0.0.RELEASE.war
-2. Ran the application using java -jar target/cn-consulting-coding-excercise-2.0.0.RELEASE.war
+1. Build the artifact mvn clean install, which produces the artifact target/knight-path-2.0.0.RELEASE.war
+2. Ran the application using java -jar target/knight-path-2.0.0.RELEASE.war
 
 ```
 mvn clean test
