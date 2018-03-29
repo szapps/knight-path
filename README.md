@@ -16,11 +16,11 @@ This is a spring boot based simple web application which demonstrates the possib
 
 ### Installing
 
-This project is configured as spring boot microservice and the output is a jar file
+This project is configured as spring boot microservice and the output is a war file
 
 ## Running the application:
 
-1. Build the artifact mvn clean install, which produces the artifact target/cn-consulting-coding-excercise-2.0.0.RELEASE.jar
+1. Build the artifact mvn clean install, which produces the artifact target/cn-consulting-coding-excercise-2.0.0.RELEASE.war
 2. Ran the application using java -jar target/cn-consulting-coding-excercise-2.0.0.RELEASE.war
 
 ```
@@ -49,5 +49,5 @@ mvn clean test
 
 ## License
 
-This code is property of MBition 
+This code is free to use and extend 
 
