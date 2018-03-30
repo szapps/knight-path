@@ -72,6 +72,7 @@
 var prevBlackKnightPos;
 var prevWhiteKnightPos;
 function placeWhiteKnight(knightPos){
+	knightPos.value = knightPos.value.toUpperCase();
 	if($("#knight"+knightPos.value)){
 		if($("#knight"+knightPos.value).html() == ''){
 			prevWhiteKnightPos = "knight"+knightPos.value;
@@ -80,6 +81,7 @@ function placeWhiteKnight(knightPos){
 	}
 }
 function placeBlackKnight(knightPos){
+	knightPos.value = knightPos.value.toUpperCase();
 	if($("#knight"+knightPos.value)){
 		if($("#knight"+knightPos.value).html() == ''){
 			prevBlackKnightPos = "knight"+knightPos.value;
