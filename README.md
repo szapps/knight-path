@@ -23,6 +23,7 @@ This project is configured as spring boot microservice and the output is a war f
 ```
 1. Build the artifact mvn clean install, which produces the artifact target/knight-path-2.0.0.RELEASE.war
 2. Ran the application using java -jar target/knight-path-2.0.0.RELEASE.war
+3. Open browser and access url http://localhost:8090
 ```
 
 OR
@@ -30,6 +31,7 @@ OR
 ```
 1. Download the file from https://github.com/szapps/knight-path/blob/master/output/knight-path-2.0.0.RELEASE.war
 2. Run using command java -jar downloaded-location/knight-path-2.0.0.RELEASE.war
+3. Open browser and access url http://localhost:8090
 ```
 
 ## TEST
