@@ -3,6 +3,7 @@
 @Author: Shrinivas Zilli
 
 GIT REPO: https://github.com/szapps/knight-path
+Youtube: https://youtu.be/6i4iQGuoU_U
 
 Knight's moves finder
 
